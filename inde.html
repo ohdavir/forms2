@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        :root {
+            --cor-bc: rgb(138, 167, 190);;
+            --cor-bcescura:rgb(70, 88, 138);
+        }
+
+        body {
+            background-color: var(--cor-bc);
+            color: #ddd;
+            margin-left: 35%;
+            margin-right: 30%;
+            text-align: center;
+            align-items: center;
+
+        }
+
+        .titulo {
+            background-color: white;
+            border-radius: 10px;
+            color: var(--cor-bc);
+            width: 20%;
+            margin: auto;
+        }
+
+        .teste {
+            display: block;
+            text-align: center;
+            background-color: var(--cor-bcescura);
+            width: 500px;
+            border-radius: 10px;
+        }
+        #envia{
+            border-radius: 5px;
+            border: none;
+            background-color: var(--cor-bc);
+            color: #ddd;
+            width: 60px;
+            height: 120%;
+            margin: 5%;
+        }
+    </style>
+    <script>
+    </script>
+</head>
+
+<body>
+    <div class="teste">
+        <header>
+            <br>
+            <h1 class="titulo">The Teste</h1>
+            <br>
+        </header>
+        <main>
+            <form onsubmit="senhaOK()" name="cadastro" method="POST" accept-charset="UTF-8" action="">
+                <label for="primeiroNome">Nome completo:</label>
+                <input type="text" id="primeiroNome" required>
+                <br>
+                <label for="robo">É um robô?</label>
+                <input type="checkbox" name="" id="robo">
+                <br>
+                <label for="Pergunta"><strong>Responda</strong></label>
+                <br>
+                <label for="vascao">Torce pro Vasco</label>
+                <input type="radio" id="vascao" name="timao">
+                <br>
+                
+                <label for="feliz">É feliz</label>
+                <input type="radio" id="feliz" name="timao">
+                <br>                
+                <label for="Pergunta"><strong>Responda denovo</strong></label>
+                <br>
+                <label for="pendrive">Não usa pendrive?</label>
+                <input type="radio" id="vascao" name="perguntpen">
+                <br>
+                <strong>OU</strong>
+                <br>
+                <label for="feliz">É feliz</label>
+                <input type="radio" id="feliz" name="perguntpen">
+                <br>                
+                <label for="Pergunta"><strong>Responda mais uma vez</strong></label>
+                <br>
+                <label for="ifc">Estuda no IFC?</label>
+                <input type="radio" id="ifc" name="estudifc">
+                <br>
+                <strong>OU</strong>
+                <br>
+                <label for="feliz">É feliz</label>
+                <input type="radio" id="feliz" name="estudifc">
+                <br>
+                <label for="kaique">O quanto você odeia o tag "br"<br>(se não responder é pq ama)</label><br>
+                <input type="range" name="" id="kaique" disabled>
+                <br>
+                <label for="envia"></label>
+                <input type="submit" id="envia" value="Enviar">
+        </main>
+        </form>
+    </div>
+</body>
+
+</html>
